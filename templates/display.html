@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <h1>Results</h1>
+    <div>
+        <h2>Uploaded Image</h2>
+        <img src="{{ url_for('static', filename=user_image) }}" alt="User uploaded image" />
+    </div>
+    <div>
+        <h2>Generated Image</h2>
+        <img src="{{ url_for('static', filename=dalle_image) }}" alt="Dalle generated image" />
+    </div>
+</body>
+</html>
